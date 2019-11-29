@@ -1,0 +1,440 @@
+/* ============= *\
+    #SOBRESCRIBE BOOSTRAP
+\* ============= */
+.row {
+    margin-top: 20px;
+}
+.pokemon-container .btn, .form-container .btn {
+    margin-top: 20px;
+}
+.alert {
+    text-align: center;
+    position: sticky;
+    top: 98px;
+    z-index: 100;
+}
+select {
+    width: 100%;
+}
+/* ============= *\
+    #GENERALES
+\* ============= */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #424242 url(../img/body_bg.png);
+    font-family: sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+.container {
+    width: 100%;
+    max-width: 996px;
+    margin: 0 auto;
+}
+.black {
+    color: #000;
+}
+.button_add {
+    padding: 10px;
+    background-color: #17a2b8;
+    color: #fff;
+    transition: background-color .25s;
+}
+.button_add:hover {
+    color: #fff;
+    background-color: #138496;
+    text-decoration: none;
+}
+/* ============= *\
+    #HEADER
+\* ============= */
+.header-container {
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.main-menu-list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.main-menu-item {
+    margin-left: 20px;
+}
+.main-menu-item_user p {
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+.main-menu-link {
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 10px;
+    transition: color .25s, background-color .25s;
+}
+.main-menu-link_login {
+    background-color: #1192EE;
+    color: #fff;
+}
+.main-menu-link_login:hover {
+    background-color: #0069D9;
+    color: #fff;
+}
+.main-menu-link_register {
+    border: 1px solid #53575A;
+}
+.main-menu-link_register:hover {
+    border: 1px solid #53575A;
+    background-color: #6c757d;
+    color: #fff;
+}
+/* ============= *\
+    #INDEX
+\* ============= */
+.pokemon-list, .pokemon-container, .posts, .form-container {
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    background: #fff url(../img/container_bg.png);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.pokemon-intro {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pokemon-intro h2 {
+    color: #929292;
+    font-size: 18px;
+}
+.pokemon-item {
+    width: 55%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+}
+.pokemon-img-container {
+    width: 180px;
+    height: 180px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+.pokemon-img {
+    width: 100%;
+}
+.pokemon-options {
+    display: flex;
+    margin-top: 40px;
+}
+.pokemon-option {
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color .25s;
+}
+.pokemon-option:hover .pokemon-option-link {
+    text-decoration: none;
+    color: #fff !important;
+}
+.pokemon-option:last-child {
+    margin-right: 0;
+}
+.pokemon-option_more {
+    background-color: #17a2b8;
+}
+.pokemon-option_more:hover {
+    background-color: #138496;
+}
+.pokemon-option_edit {
+    background-color: #ffc107;
+}
+.pokemon-option_edit:hover {
+    background-color: #E0A800;
+}
+.pokemon-option_delete, .pokemon-option_delete input {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    transition: background-color .25s;
+}
+.pokemon-option_delete:hover, .pokemon-option_delete:hover input {
+    background-color: #C82333;
+}
+.pokemon-option-link {
+    color: #fff;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.pokemon-option-link img {
+    width: 20px;
+    margin-right: 5px;
+}
+/* ============= *\
+    #VERPOKEMON
+\* ============= */
+.pokemon {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+}
+.pokemon .pokemon-img-container {
+    width: 350px;
+    height: 350px;
+}
+.pokemon-desc {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #30a7d7;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.pokemon-desc p {
+    margin-bottom: 10px;
+}
+.pokemon-desc h2 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.pokemon-caracteristicas-list {
+    display: flex;
+    justify-content: space-between;
+}
+.pokemon ul {
+    margin-bottom: 20px;
+}
+.pokemon .pokemon-options {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.posts-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #17a2b8;
+}
+/* ============= *\
+    #POSTPOKEMON
+\* ============= */
+.post-item {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 50px;
+    width: 80%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+}
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post-title {
+    font-size: 24px;
+}
+.post-header .pokemon-options {
+    margin-top: 0;
+}
+.post-author {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.post-comentarios {
+    display: flex;
+    align-items: center;
+}
+.post-author span {
+    font-size: 15px;
+}
+.post-item p {
+    margin-bottom: 15px;
+}
+.icon-comments {
+    margin-right: 5px;
+    width: 18px;
+}
+.view-comentarios {
+    display: inline-block;
+    background-color: #1192EE;
+    color: #fff;
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.view-comentarios:hover {
+    transition: background-color .25s;
+    background-color: #0069D9;
+}
+.post-comentarios a.button_add {
+    background-color: #17a2b8;
+    margin-left: 20px;
+    margin-top: 0;
+}
+.post-comentarios a.button_add:hover {
+    background-color: #138496;
+}
+/* ============= *\
+    #COMENTARIOPOST
+\* ============= */
+.comentarios-container {
+    margin-left: 60px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.comentarios-container_active {
+    margin-top: 20px;
+}
+.comentario {
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform .25s, flex .25s, margin .25s, padding .25s;
+}
+.comentarios-container_active .comentario_active {
+    transition: all .25s;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+    opacity: 1;
+    transform: scale(1);
+}
+.comentario-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.comentario-header p {
+    margin-bottom: 0;
+}
+.coment-user {
+    width: 26px;
+    margin-right: 20px;
+}
+.comentario-content {
+    margin-left: 45px;
+}
+.comentarios-container .pokemon-options {
+    margin-left: auto;
+    margin-top: auto;
+}
+/* ============= *\
+    #CREATE
+\* ============= */
+.form-input-container {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-input {
+    width: 100%;
+    padding: 5px;
+}
+.form {
+    margin-top: 20px;
+    text-align: center;
+}
+.form label {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.form-input-container p {
+    text-align: center;
+}
+.drop-zone {
+    width: 100%;
+    margin-bottom: 1.5em;
+    height: 200px;
+    background-color: #838383;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px dashed #caced6;
+    cursor: pointer;
+    padding: 10px;
+}
+.drop-zone_active {
+    border: 5px solid #caced6;
+    background-color: #414141;
+    color: #caced6;
+}
+.icono-upload {
+    height: 60px;
+    margin-bottom: 10px;
+    fill: currentColor;
+}
+.hide {
+    display: none;
+}
+.form-button {
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #28a745;
+    border-radius: 10px;
+    color: #fff;
+    transition: background-color .25s;
+    /*margin-bottom: 20px;*/
+}
+.form-button:hover {
+    background-color: #237e38;
+}
+.input-image {
+    position: relative;
+    margin-bottom: 20px;
+}
+.input-image img {
+    width: 250px;
+    background-color: #F2F2F2;
+}
+.eliminar-img {
+    background-color: red;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    top: -15px;
+    cursor: pointer;
+    display: none;
+}
+.eliminar-img img {
+    position: relative;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    top: 4px;
+}
